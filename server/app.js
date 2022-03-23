@@ -14,6 +14,7 @@ app.use(express.json());
 
 const uri = 'mongodb+srv://fileuploaddatabase:bhouriamongodbatlas123@shoeshop.0ybin.mongodb.net/fileuploadDatabase?retryWrites=true&w=majority'
 
+
 const connectDB = async () => {
     try {
         const connect = await mongoose.connect(uri, {
