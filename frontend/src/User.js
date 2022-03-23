@@ -36,14 +36,14 @@ const User = () => {
 
     return (
         <form onSubmit={handleSubmit} encType='multipart/form-data'>
-            <input 
-                type="file" 
+            <input
+                type="file"
                 accept=".png, .jpg, .jpeg"
                 name="photo"
                 onChange={handlePhoto}
             />
 
-            <input 
+            <input
                 type="text"
                 placeholder="name"
                 name="name"
@@ -51,14 +51,14 @@ const User = () => {
                 onChange={handleChange}
             />
 
-            <input 
+            <input
                 type="date"
                 name="birthdate"
                 value={newUser.date}
                 onChange={handleChange}
             />
 
-            <input 
+            <input
                 type="submit"
             />
         </form>
